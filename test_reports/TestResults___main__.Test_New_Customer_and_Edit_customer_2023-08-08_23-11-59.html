@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-08-08 23:11:59</p>
+                <p class='attribute'><strong>Duration: </strong>86.06 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 30, Pass: 22, Fail: 8</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.Test_New_Customer_and_Edit_customer</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_Address_Cannot_Be_Empty</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'ADDRESS Field must not be blank' != 'Address Field must not be blank'
+- ADDRESS Field must not be blank
+?  ^^^^^^
++ Address Field must not be blank
+?  ^^^^^^
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 80, in test_Address_Cannot_Be_Empty
+    self.assertEqual("ADDRESS Field must not be blank", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'ADDRESS Field must not be blank' != 'Address Field must not be blank'
+- ADDRESS Field must not be blank
+?  ^^^^^^
++ Address Field must not be blank
+?  ^^^^^^
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Address_Cannot_Have_First_Blank_Space</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_City_Cannot_Be_Empty</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'City Field must be not blank' != 'City Field must not be blank'
+- City Field must be not blank
+?                 ---
++ City Field must not be blank
+?                    +++
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 101, in test_City_Cannot_Be_Empty
+    self.assertEqual("City Field must be not blank", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'City Field must be not blank' != 'City Field must not be blank'
+- City Field must be not blank
+?                 ---
++ City Field must not be blank
+?                    +++
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_City_cannot_be_numeric</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_City_cannot_have_first_blank_space</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_City_cannot_have_special_character</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Customer_id_cannot_be_empty</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Customer_id_must_be_numeric</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_Email_cannot_be_empty</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'Email ID must not be blank' != 'Email-ID must not be blank'
+- Email ID must not be blank
+?      ^
++ Email-ID must not be blank
+?      ^
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 374, in test_Email_cannot_be_empty
+    self.assertEqual("Email ID must not be blank", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'Email ID must not be blank' != 'Email-ID must not be blank'
+- Email ID must not be blank
+?      ^
++ Email-ID must not be blank
+?      ^
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_Email_cannot_have_space</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'Email-ID is not valid' != 'First character can not have space'
+- Email-ID is not valid
++ First character can not have space
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 429, in test_Email_cannot_have_space
+    self.assertEqual("Email-ID is not valid", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'Email-ID is not valid' != 'First character can not have space'
+- Email-ID is not valid
++ First character can not have space
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Email_must_be_in_correct_format</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Mobile_numberTelephone_cannot_have_first_character_as_blank_space</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Mobile_number_cannot_be_empty</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Mobile_number_cannot_have_spaces</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Mobile_number_cannot_have_special_character</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Name_Cannot_Be_Empty</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Name_Cannot_Be_Numeric</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Name_Cannot_Have_First_Character_As_Blank_Space</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Name_Cannot_Have_Special_Characters</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_PIN_cannot_be_empty</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'PIN code must not be blank' != 'PIN Code must not be blank'
+- PIN code must not be blank
+?     ^
++ PIN Code must not be blank
+?     ^
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 241, in test_PIN_cannot_be_empty
+    self.assertEqual("PIN code must not be blank", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'PIN code must not be blank' != 'PIN Code must not be blank'
+- PIN code must not be blank
+?     ^
++ PIN Code must not be blank
+?     ^
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_PIN_cannot_have_blank_space</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_PIN_cannot_have_first_blank_space</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'First character cannot have space' != 'First character can not have space'
+- First character cannot have space
++ First character can not have space
+?                    +
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 291, in test_PIN_cannot_have_first_blank_space
+    self.assertEqual("First character cannot have space", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'First character cannot have space' != 'First character can not have space'
+- First character cannot have space
++ First character can not have space
+?                    +
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_PIN_cannot_have_special_character</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_PIN_must_be_numeric</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'Characters are not allowed' != 'PIN Code must have 6 Digits'
+- Characters are not allowed
++ PIN Code must have 6 Digits
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 221, in test_PIN_must_be_numeric
+    self.assertEqual("Characters are not allowed", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'Characters are not allowed' != 'PIN Code must have 6 Digits'
+- Characters are not allowed
++ PIN Code must have 6 Digits
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_PIN_must_have_6_digits</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Password_cannot_be_empty</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_State_cannot_be_empty</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_State_cannot_be_numeric</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_State_cannot_have_first_blank_space</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'First character cannot have space' != 'First character can not have space'
+- First character cannot have space
++ First character can not have space
+?                    +
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 209, in test_State_cannot_have_first_blank_space
+    self.assertEqual("First character cannot have space", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'First character cannot have space' != 'First character can not have space'
+- First character cannot have space
++ First character can not have space
+?                    +
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_State_cannot_have_special_character</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 30, Pass: 22, Fail: 8 -- Duration: 86.06 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-08-08 23:11:59</p>
+                <p class='attribute'><strong>Duration: </strong>93.45 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 38, Pass: 27, Fail: 7, Error: 4</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.testSUITE</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testacase_01_mini_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: ' Account Number must not be blank' != 'Account Number must not be blank'
+-  Account Number must not be blank
+? -
++ Account Number must not be blank
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 1768, in testacase_01_mini_statement
+    self.assertEqual(" Account Number must not be blank", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: ' Account Number must not be blank' != 'Account Number must not be blank'
+-  Account Number must not be blank
+? -
++ Account Number must not be blank
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testacase_02_01_mini_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testacase_02_02_mini_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'Characters are not allowed' != ''
+- Characters are not allowed
++ 
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 1808, in testacase_02_02_mini_statement
+    self.assertEqual("Characters are not allowed", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'Characters are not allowed' != ''
+- Characters are not allowed
++ 
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testacase_03_01_mini_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">testacase_03_02_mini_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[6]/td[2]/input[1]"}
+  (Session info: chrome=115.0.5790.171); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0038A813+48355]
+	(No symbol) [0x0031C4B1]
+	(No symbol) [0x00225358]
+	(No symbol) [0x002509A5]
+	(No symbol) [0x00250B3B]
+	(No symbol) [0x0027E232]
+	(No symbol) [0x0026A784]
+	(No symbol) [0x0027C922]
+	(No symbol) [0x0026A536]
+	(No symbol) [0x002482DC]
+	(No symbol) [0x002493DD]
+	GetHandleVerifier [0x005EAABD+2539405]
+	GetHandleVerifier [0x0062A78F+2800735]
+	GetHandleVerifier [0x0062456C+2775612]
+	GetHandleVerifier [0x004151E0+616112]
+	(No symbol) [0x00325F8C]
+	(No symbol) [0x00322328]
+	(No symbol) [0x0032240B]
+	(No symbol) [0x00314FF7]
+	BaseThreadInitThunk [0x762200C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77257B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77257AEE+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 1847, in testacase_03_02_mini_statement
+    account_number= driver.find_element(By.XPATH, "//tbody/tr[6]/td[2]/input[1]")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[6]/td[2]/input[1]"}
+  (Session info: chrome=115.0.5790.171); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0038A813+48355]
+	(No symbol) [0x0031C4B1]
+	(No symbol) [0x00225358]
+	(No symbol) [0x002509A5]
+	(No symbol) [0x00250B3B]
+	(No symbol) [0x0027E232]
+	(No symbol) [0x0026A784]
+	(No symbol) [0x0027C922]
+	(No symbol) [0x0026A536]
+	(No symbol) [0x002482DC]
+	(No symbol) [0x002493DD]
+	GetHandleVerifier [0x005EAABD+2539405]
+	GetHandleVerifier [0x0062A78F+2800735]
+	GetHandleVerifier [0x0062456C+2775612]
+	GetHandleVerifier [0x004151E0+616112]
+	(No symbol) [0x00325F8C]
+	(No symbol) [0x00322328]
+	(No symbol) [0x0032240B]
+	(No symbol) [0x00314FF7]
+	BaseThreadInitThunk [0x762200C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77257B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77257AEE+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testacase_04_mini_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testacase_05_balance_enquiry</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testacase_05_mini_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'First character cannot have space' != 'Characters are not allowed'
+- First character cannot have space
++ Characters are not allowed
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 1890, in testacase_05_mini_statement
+    self.assertEqual("First character cannot have space" , error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'First character cannot have space' != 'Characters are not allowed'
+- First character cannot have space
++ Characters are not allowed
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testacase_06_balance_enquiry</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">testacase_06_mini_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: Account does not exist
+Message: unexpected alert open: {Alert text : Account does not exist}
+  (Session info: chrome=115.0.5790.171)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0038A813+48355]
+	(No symbol) [0x0031C4B1]
+	(No symbol) [0x00225358]
+	(No symbol) [0x0027CDAD]
+	(No symbol) [0x0026A536]
+	(No symbol) [0x002482DC]
+	(No symbol) [0x002493DD]
+	GetHandleVerifier [0x005EAABD+2539405]
+	GetHandleVerifier [0x0062A78F+2800735]
+	GetHandleVerifier [0x0062456C+2775612]
+	GetHandleVerifier [0x004151E0+616112]
+	(No symbol) [0x00325F8C]
+	(No symbol) [0x00322328]
+	(No symbol) [0x0032240B]
+	(No symbol) [0x00314FF7]
+	BaseThreadInitThunk [0x762200C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77257B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77257AEE+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 1894, in testacase_06_mini_statement
+    driver.get("https://demo.guru99.com/V4/")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 355, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Account does not exist
+Message: unexpected alert open: {Alert text : Account does not exist}
+  (Session info: chrome=115.0.5790.171)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0038A813+48355]
+	(No symbol) [0x0031C4B1]
+	(No symbol) [0x00225358]
+	(No symbol) [0x0027CDAD]
+	(No symbol) [0x0026A536]
+	(No symbol) [0x002482DC]
+	(No symbol) [0x002493DD]
+	GetHandleVerifier [0x005EAABD+2539405]
+	GetHandleVerifier [0x0062A78F+2800735]
+	GetHandleVerifier [0x0062456C+2775612]
+	GetHandleVerifier [0x004151E0+616112]
+	(No symbol) [0x00325F8C]
+	(No symbol) [0x00322328]
+	(No symbol) [0x0032240B]
+	(No symbol) [0x00314FF7]
+	BaseThreadInitThunk [0x762200C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77257B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77257AEE+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testacase_07_balance_enquiry</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testacase_07_mini_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testacase_08_mini_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_01_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testcase_02_01_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'Characters are not allowed' != ''
+- Characters are not allowed
++ 
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 1993, in testcase_02_01_customized_statement
+    self.assertEqual("Characters are not allowed" , error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'Characters are not allowed' != ''
+- Characters are not allowed
++ 
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_02_02_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_03_01_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_03_02_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_04_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testcase_05_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'First character cannot have space' != 'Characters are not allowed'
+- First character cannot have space
++ Characters are not allowed
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 2090, in testcase_05_customized_statement
+    self.assertEqual("First character cannot have space", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'First character cannot have space' != 'Characters are not allowed'
+- First character cannot have space
++ Characters are not allowed
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_06_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_07_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_07_edit_account</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">testcase_08_01_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: Account does not exist
+Message: unexpected alert open: {Alert text : Account does not exist}
+  (Session info: chrome=115.0.5790.171)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0038A813+48355]
+	(No symbol) [0x0031C4B1]
+	(No symbol) [0x00225358]
+	(No symbol) [0x0027CDAD]
+	(No symbol) [0x0026A536]
+	(No symbol) [0x002482DC]
+	(No symbol) [0x002493DD]
+	GetHandleVerifier [0x005EAABD+2539405]
+	GetHandleVerifier [0x0062A78F+2800735]
+	GetHandleVerifier [0x0062456C+2775612]
+	GetHandleVerifier [0x004151E0+616112]
+	(No symbol) [0x00325F8C]
+	(No symbol) [0x00322328]
+	(No symbol) [0x0032240B]
+	(No symbol) [0x00314FF7]
+	BaseThreadInitThunk [0x762200C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77257B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77257AEE+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 2129, in testcase_08_01_customized_statement
+    driver.get("https://demo.guru99.com/V4/")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 355, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Account does not exist
+Message: unexpected alert open: {Alert text : Account does not exist}
+  (Session info: chrome=115.0.5790.171)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0038A813+48355]
+	(No symbol) [0x0031C4B1]
+	(No symbol) [0x00225358]
+	(No symbol) [0x0027CDAD]
+	(No symbol) [0x0026A536]
+	(No symbol) [0x002482DC]
+	(No symbol) [0x002493DD]
+	GetHandleVerifier [0x005EAABD+2539405]
+	GetHandleVerifier [0x0062A78F+2800735]
+	GetHandleVerifier [0x0062456C+2775612]
+	GetHandleVerifier [0x004151E0+616112]
+	(No symbol) [0x00325F8C]
+	(No symbol) [0x00322328]
+	(No symbol) [0x0032240B]
+	(No symbol) [0x00314FF7]
+	BaseThreadInitThunk [0x762200C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77257B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77257AEE+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_08_02_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_08_edit_account</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_09_01_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_09_02_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_10_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_11_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testcase_12_01_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'Characters are not allowed' != ''
+- Characters are not allowed
++ 
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 2264, in testcase_12_01_customized_statement
+    self.assertEqual("Characters are not allowed", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'Characters are not allowed' != ''
+- Characters are not allowed
++ 
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_12_02_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_13_01_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_13_02_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_14_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testcase_15_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'First character cannot have space' != 'Characters are not allowed'
+- First character cannot have space
++ Characters are not allowed
+ : Error message does not match</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 2367, in testcase_15_customized_statement
+    self.assertEqual("First character cannot have space", error_message, "Error message does not match")
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'First character cannot have space' != 'Characters are not allowed'
+- First character cannot have space
++ Characters are not allowed
+ : Error message does not match
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testcase_16_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">testcase_17_customized_statement</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[10]/td[2]/input[1]"}
+  (Session info: chrome=115.0.5790.171); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0038A813+48355]
+	(No symbol) [0x0031C4B1]
+	(No symbol) [0x00225358]
+	(No symbol) [0x002509A5]
+	(No symbol) [0x00250B3B]
+	(No symbol) [0x0027E232]
+	(No symbol) [0x0026A784]
+	(No symbol) [0x0027C922]
+	(No symbol) [0x0026A536]
+	(No symbol) [0x002482DC]
+	(No symbol) [0x002493DD]
+	GetHandleVerifier [0x005EAABD+2539405]
+	GetHandleVerifier [0x0062A78F+2800735]
+	GetHandleVerifier [0x0062456C+2775612]
+	GetHandleVerifier [0x004151E0+616112]
+	(No symbol) [0x00325F8C]
+	(No symbol) [0x00322328]
+	(No symbol) [0x0032240B]
+	(No symbol) [0x00314FF7]
+	BaseThreadInitThunk [0x762200C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77257B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77257AEE+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 2440, in testcase_17_customized_statement
+    error_message = driver.find_element(By.XPATH, "//tbody/tr[10]/td[2]/input[1]").text
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[10]/td[2]/input[1]"}
+  (Session info: chrome=115.0.5790.171); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0038A813+48355]
+	(No symbol) [0x0031C4B1]
+	(No symbol) [0x00225358]
+	(No symbol) [0x002509A5]
+	(No symbol) [0x00250B3B]
+	(No symbol) [0x0027E232]
+	(No symbol) [0x0026A784]
+	(No symbol) [0x0027C922]
+	(No symbol) [0x0026A536]
+	(No symbol) [0x002482DC]
+	(No symbol) [0x002493DD]
+	GetHandleVerifier [0x005EAABD+2539405]
+	GetHandleVerifier [0x0062A78F+2800735]
+	GetHandleVerifier [0x0062456C+2775612]
+	GetHandleVerifier [0x004151E0+616112]
+	(No symbol) [0x00325F8C]
+	(No symbol) [0x00322328]
+	(No symbol) [0x0032240B]
+	(No symbol) [0x00314FF7]
+	BaseThreadInitThunk [0x762200C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77257B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77257AEE+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 38, Pass: 27, Fail: 7, Error: 4 -- Duration: 93.45 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

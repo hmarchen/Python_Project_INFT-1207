@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-08-08 23:11:59</p>
+                <p class='attribute'><strong>Duration: </strong>352.45 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 28, Pass: 10, Fail: 5, Error: 13</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestBankApplication</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_balance_enquiry_empty_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_balance_enquiry_first_character_space_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: Unable to locate element: [id="message2"]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:505:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:132:16
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 906, in test_balance_enquiry_first_character_space_account_number
+    error_message = self.driver.find_element(By.ID, "message2")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [id="message2"]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:505:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:132:16
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_balance_enquiry_numeric_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Please fill all fields
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 878, in test_balance_enquiry_numeric_account_number
+    account_number_error = self.driver.find_element(By.ID, "message2")
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Please fill all fields
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_balance_enquiry_special_character_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Please fill all fields
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 890, in test_balance_enquiry_special_character_account_number
+    error_message = self.driver.find_element(By.ID, "message2")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Please fill all fields
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_delete_account_blank_space_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Please fill all fields
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 806, in test_delete_account_blank_space_account_number
+    error_message = self.driver.find_element(By.ID, "message2")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Please fill all fields
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_delete_account_empty_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_delete_account_first_character_space_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Do you really want to delete this Account?
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 818, in test_delete_account_first_character_space_account_number
+    error_message = self.driver.find_element(By.ID, "message2")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Do you really want to delete this Account?
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_delete_account_invalid_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: Unable to locate element: [id="message10"]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:505:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:132:16
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 851, in test_delete_account_invalid_account_number
+    error_message = self.driver.find_element(By.ID, "message10")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [id="message10"]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:505:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:132:16
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_delete_account_numeric_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Please fill all fields
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 782, in test_delete_account_numeric_account_number
+    account_number_error = self.driver.find_element(By.ID, "message2")
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Please fill all fields
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_delete_account_special_character_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Please fill all fields
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 794, in test_delete_account_special_character_account_number
+    error_message = self.driver.find_element(By.ID, "message2")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: Please fill all fields
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_delete_account_valid_account_number</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_edit_customer_empty_address</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'Address Field must be blank' != 'Address Field must not be blank'
+- Address Field must be blank
++ Address Field must not be blank
+?                    ++++
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 551, in test_edit_customer_empty_address
+    self.assertEqual("Address Field must be blank", error_message.text)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'Address Field must be blank' != 'Address Field must not be blank'
+- Address Field must be blank
++ Address Field must not be blank
+?                    ++++
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_edit_customer_empty_city</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_edit_customer_empty_email</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_edit_customer_empty_mobile_no</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'Telephone no must not be blank' != ''
+- Telephone no must not be blank
++ 
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 700, in test_edit_customer_empty_mobile_no
+    self.assertEqual("Telephone no must not be blank", error_message.text)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'Telephone no must not be blank' != ''
+- Telephone no must not be blank
++ 
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_edit_customer_empty_pin</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Actual error message: 
+</p><p style="color:maroon;">AssertionError: 'PIN Code must not be blank' != ''
+- PIN Code must not be blank
++ 
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 646, in test_edit_customer_empty_pin
+    self.assertEqual("PIN Code must not be blank", error_message.text)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'PIN Code must not be blank' != ''
+- PIN Code must not be blank
++ 
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_edit_customer_empty_state</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_edit_customer_invalid_email_format</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: No Changes made to Customer records
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 740, in test_edit_customer_invalid_email_format
+    error_message = self.driver.find_element(By.ID, "message9")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: No Changes made to Customer records
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_edit_customer_long_short_pin</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: No Changes made to Customer records
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 661, in test_edit_customer_long_short_pin
+    error_message = WebDriverWait(self.driver, 10).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 86, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 82, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: No Changes made to Customer records
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_edit_customer_non_numeric_pin</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: No Changes made to Customer records
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 633, in test_edit_customer_non_numeric_pin
+    error_message = self.driver.find_element(By.ID, "message5")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: No Changes made to Customer records
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_edit_customer_numeric_city</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'Numbers are allowed' != 'Numbers are not allowed'
+- Numbers are allowed
++ Numbers are not allowed
+?            ++++
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 573, in test_edit_customer_numeric_city
+    self.assertEqual("Numbers are allowed", error_message.text)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'Numbers are allowed' != 'Numbers are not allowed'
+- Numbers are allowed
++ Numbers are not allowed
+?            ++++
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_edit_customer_numeric_state</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_edit_customer_special_character_city</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_edit_customer_special_character_customer_id</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'Special characters are not allowed' != 'Please fill all fields'
+- Special characters are not allowed
++ Please fill all fields
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 526, in test_edit_customer_special_character_customer_id
+    self.assertEqual("Special characters are not allowed", alert_text)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 873, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 1253, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py", line 703, in fail
+    raise self.failureException(msg)
+AssertionError: 'Special characters are not allowed' != 'Please fill all fields'
+- Special characters are not allowed
++ Please fill all fields
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_edit_customer_special_character_mobile_no</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: No Changes made to Customer records
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 714, in test_edit_customer_special_character_mobile_no
+    error_message = self.driver.find_element(By.ID, "message7")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: No Changes made to Customer records
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_edit_customer_special_character_pin</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: No Changes made to Customer records
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Gleb\Documents\DurhamCollege\Semester 2\INFT-1207 - Software Testing and Automatn\FINALPROJECT\COMPLETE\INFT 1207 – Group7.py", line 688, in test_edit_customer_special_character_pin
+    error_message = self.driver.find_element(By.ID, "message6")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Gleb\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 244, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: Dismissed user prompt dialog: No Changes made to Customer records
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:704:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2824:13
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_edit_customer_special_character_state</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_edit_customer_valid_customer_id</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 28, Pass: 10, Fail: 5, Error: 13 -- Duration: 352.45 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
